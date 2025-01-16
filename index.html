@@ -1,0 +1,50 @@
+<head>
+  <style>
+    .stock-container {
+      display: flex;
+      background-color: #dedede;
+      border-radius: 10px;
+      padding: 10px;
+
+      font-size: 20px;
+      font-family: monospace;
+      justify-content: space-between;
+    }
+
+    .money-container {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      font-family: monospace;
+      padding: 20px 0px;
+    }
+
+    .stock-list {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    #user-info {
+      font-family: monospace;
+      white-space: break-spaces;
+    }
+
+    #user-interface {
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>Stock Simulator</h1>
+  <div class="main">
+    <div id="user-info"></div>
+    <div id="user-interface">
+      <span>Select stock:</span>
+      <input placeholder="Stock code" id="stock-code"/>
+      <button id="buy-stock-button">Buy</button>
+      <button id="sell-stock-button">Sell</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
